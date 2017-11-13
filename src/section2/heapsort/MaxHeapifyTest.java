@@ -37,19 +37,19 @@ public class MaxHeapifyTest {
 	
 	@Test
 	public void makeSampleHeap() {
-		heapSort.print(heapSort.makeSampleHeap(10));
+		HeapUtils.print(HeapUtils.makeSampleHeap(10));
 	}
 	
 	@Test
 	public void isMaxHeap_validate() {
-		int[] maxHeap = heapSort.makeSampleHeap(10); 
-		assertEquals(true, heapSort.isMaxHeap(maxHeap));
+		int[] maxHeap = HeapUtils.makeSampleHeap(10); 
+		assertEquals(true, HeapUtils.isMaxHeap(maxHeap));
 	}
 	
 	@Test
 	public void isMaxHeap_not_validate() {
-		int[] maxHeap = heapSort.makeSampleHeap(10); 
+		int[] maxHeap = HeapUtils.makeSampleHeap(10); 
 		maxHeap[1] = 1;
-		assertEquals(false, heapSort.isMaxHeap(maxHeap));
+		assertEquals(false, HeapUtils.isMaxHeap(maxHeap));
 	}
 }
