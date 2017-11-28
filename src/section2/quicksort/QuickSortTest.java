@@ -19,5 +19,4 @@ public class QuickSortTest {
 		quickSort.quickSort(array, 0, array.length - 1);
 		quickSort.print(array);
 	}
-
 }
