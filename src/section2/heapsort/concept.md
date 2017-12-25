@@ -1,5 +1,5 @@
 heap sort: heap 자료 구조를 사용하여 정렬하는 알고리즘
-Max heap:각 노드의 값이 children의 값보다 크거나 같은 complete binary tree이다.
+Max heap: 각 노드의 값이 children의 값보다 크거나 같은 complete binary tree이다.
 time complexity: O(nlgn)
 in-place algorithm: O(1)
 
@@ -7,7 +7,6 @@ in-place algorithm: O(1)
 	- 노드의 subtrees는 모두 max heap라고 가정. test_heapify() 함수 구현
 	- 아래의 함수들을 활용해서 max_heapify() 함수 동작 여부 검증하는 함수
 	-> MaxHeapify class 
-
 
 2. makeSampleHeap(int n)
 	- 테스트 용도의 max heap 생성 함수

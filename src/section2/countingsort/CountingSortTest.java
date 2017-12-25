@@ -5,6 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import section2.Utils;
+
 public class CountingSortTest {
 
 	CountingSort countingSort;
@@ -21,18 +23,18 @@ public class CountingSortTest {
 	@Test
 	public void test20() {
 		int[] result = countingSort.countingSort(element20, 100);
-		assertEquals(true, countingSort.isSorted(result));
+		assertEquals(true, Utils.isSorted(result));
 	}
 	
 	@Test
 	public void test1() {
 		int[] result = countingSort.countingSort(element1, 100);
-		assertEquals(true, countingSort.isSorted(result));
+		assertEquals(true, Utils.isSorted(result));
 	}
 	
 	@Test
 	public void test0() {
 		int[] result = countingSort.countingSort(element0, 100);
-		assertEquals(true, countingSort.isSorted(result));
+		assertEquals(true, Utils.isSorted(result));
 	}
 }

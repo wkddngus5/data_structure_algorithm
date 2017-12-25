@@ -18,7 +18,7 @@ public class HeapTest {
 		assertEquals(max, heap.deleteMax());
 		assertEquals(true, heap.isMaxHeap());
 	}
-	
+
 	@Test
 	public void heapIncreaseKey() {
 		heap = new Heap(HeapUtils.makeSampleHeap(10));
